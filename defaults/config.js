@@ -108,7 +108,7 @@ module.exports = {
 	// from URLs posted in channels and private messages.
 	//
 	// This value is set to `false` by default.
-	prefetch: false,
+	prefetch: true,
 
 	// ### `prefetchStorage`
 
@@ -128,7 +128,7 @@ module.exports = {
 	// restarts.
 	//
 	// This value is set to `false` by default.
-	prefetchStorage: false,
+	prefetchStorage: true,
 
 	// ### `prefetchMaxImageSize`
 	//
@@ -180,7 +180,7 @@ module.exports = {
 	//
 	// This value is set to `"The Lounge - https://thelounge.chat"` by
 	// default.
-	leaveMessage: "The Lounge - https://thelounge.chat",
+	leaveMessage: "OmertaChat powered by https://thelounge.chat",
 
 	// ## Default network
 
@@ -226,16 +226,16 @@ module.exports = {
 	// }
 	// ```
 	defaults: {
-		name: "Freenode",
-		host: "chat.freenode.net",
+		name: "Omerta",
+		host: "irc.barafranca.com",
 		port: 6697,
 		password: "",
 		tls: true,
 		rejectUnauthorized: true,
-		nick: "thelounge%%",
-		username: "thelounge",
-		realname: "The Lounge User",
-		join: "#thelounge",
+		nick: "",
+		username: "",
+		realname: "",
+		join: "#barafranca",
 	},
 
 	// ### `lockNetwork`
@@ -245,7 +245,7 @@ module.exports = {
 	// These fields will also be hidden from the UI.
 	//
 	// This value is set to `false` by default.
-	lockNetwork: false,
+	lockNetwork: true,
 
 	// ## User management
 

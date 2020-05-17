@@ -7,7 +7,7 @@
 			<h1 class="title">Help</h1>
 
 			<h2 class="help-version-title">
-				<span>About The Lounge</span>
+				<span>OmertaChat</span>
 				<small>
 					v{{ $store.state.serverConfiguration.version }} (<router-link
 						id="view-changelog"
@@ -22,8 +22,8 @@
 
 				<template v-if="$store.state.serverConfiguration.gitCommit">
 					<p>
-						The Lounge is running from source (<a
-							:href="`https://github.com/thelounge/thelounge/tree/${$store.state.serverConfiguration.gitCommit}`"
+						The OmertaChat is running from source (<a
+							:href="`https://github.com/mustafabayar/thelounge/tree/${$store.state.serverConfiguration.gitCommit}`"
 							target="_blank"
 							rel="noopener"
 							>commit <code>{{ $store.state.serverConfiguration.gitCommit }}</code></a
@@ -34,7 +34,7 @@
 						<li>
 							Compare
 							<a
-								:href="`https://github.com/thelounge/thelounge/compare/${$store.state.serverConfiguration.gitCommit}...master`"
+								:href="`https://github.com/mustafabayar/thelounge/compare/${$store.state.serverConfiguration.gitCommit}...master`"
 								target="_blank"
 								rel="noopener"
 								>between
@@ -46,7 +46,7 @@
 						<li>
 							Compare
 							<a
-								:href="`https://github.com/thelounge/thelounge/compare/${$store.state.serverConfiguration.version}...${$store.state.serverConfiguration.gitCommit}`"
+								:href="`https://github.com/mustafabayar/thelounge/compare/${$store.state.serverConfiguration.version}...${$store.state.serverConfiguration.gitCommit}`"
 								target="_blank"
 								rel="noopener"
 								>between
@@ -559,7 +559,7 @@
 				</div>
 				<div class="description">
 					<p>
-						Send an action message to the current channel. The Lounge will display it
+						Send an action message to the current channel. OmertaChat will display it
 						inline, as if the message was posted in the third person.
 					</p>
 				</div>

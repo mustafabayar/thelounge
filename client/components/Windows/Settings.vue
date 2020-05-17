@@ -25,7 +25,7 @@
 					class="btn"
 					@click.prevent="nativeInstallPrompt"
 				>
-					Add The Lounge to Home screen
+					Add Omerta Chat to Home screen
 				</button>
 				<button
 					v-if="canRegisterProtocol"
@@ -33,7 +33,7 @@
 					class="btn"
 					@click.prevent="registerProtocol"
 				>
-					Open irc:// URLs with The Lounge
+					Open irc:// URLs with Omerta Chat
 				</button>
 			</div>
 
@@ -109,7 +109,7 @@
 						type="text"
 						name="awayMessage"
 						class="input"
-						placeholder="Away message if The Lounge is not open"
+						placeholder="Away message if OmertaChat is not open"
 					/>
 				</label>
 			</div>
@@ -290,7 +290,7 @@ This may break orientation if your browser does not support that."
 								target="_blank"
 								rel="noopener"
 								>not support the web push notification specification</a
-							>, and because all browsers on iOS use Safari under the hood, The Lounge
+							>, and because all browsers on iOS use Safari under the hood, Omerta Chat
 							is unable to provide push notifications on iOS devices.
 						</div>
 					</div>

@@ -4,7 +4,7 @@
 			Checking for updates…
 		</p>
 		<p v-if="$store.state.versionStatus === 'new-version'">
-			The Lounge <b>{{ $store.state.versionData.latest.version }}</b>
+			OmertaChat <b>{{ $store.state.versionData.latest.version }}</b>
 			<template v-if="$store.state.versionData.latest.prerelease">
 				(pre-release)
 			</template>
@@ -16,12 +16,12 @@
 			</a>
 		</p>
 		<p v-if="$store.state.versionStatus === 'new-packages'">
-			The Lounge is up to date, but there are out of date packages Run
+			OmertaChat is up to date, but there are out of date packages Run
 			<code>thelounge upgrade</code> on the server to upgrade packages.
 		</p>
 		<template v-if="$store.state.versionStatus === 'up-to-date'">
 			<p>
-				The Lounge is up to date!
+				OmertaChat is up to date!
 			</p>
 
 			<button
