@@ -51,6 +51,17 @@
 			<div v-if="errorShown" class="error">Authentication failed.</div>
 
 			<button :disabled="inFlight" type="submit" class="btn">Sign in</button>
+
+			<br />
+			<br />
+			<div>
+				<pre style="background-color: #566776;">
+This is not NickServ credentials. Enter your OmertaChat credentials. Username is case-sensitive.
+If you don't have an account yet, simply enter a new username and password. 
+If the username is not yet taken, it will be registered with the given password.
+You can change the theme later in the settings.</pre
+				>
+			</div>
 		</form>
 	</div>
 </template>

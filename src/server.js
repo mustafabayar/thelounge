@@ -835,6 +835,12 @@ function performAuthentication(data) {
 
 	client = manager.findClient(data.user);
 
+	if (client === undefined && data.password) {
+		const hash = Helper.password.hash(data.password);
+		manager.addUser(data.user, hash, true);
+		client = manager.loadUser(data.user);
+	}
+
 	// We have found an existing user and client has provided a token
 	if (client && data.token) {
 		const providedToken = client.calculateTokenHash(data.token);
